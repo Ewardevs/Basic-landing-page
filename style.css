@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700;900&display=swap');
+
+body{
+    background-color: #eee;
+    display:flex;
+    width: 100%;
+    justify-content: center;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: Raleway;
+}
+
+#header{
+    width: 95%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #eee;
+    font-size: large;
+    z-index: 5;
+}
+
+#header #header-img{
+    width: 50vh;
+    margin: 15px 0;
+}
+
+nav{
+    display: flex;
+    width: 70vh;
+    justify-content: space-around;
+    font-weight: bold;
+}
+
+.base{
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form{
+    text-align: center;
+    display: grid;
+    width: 100%;
+    gap: 15px;
+    align-items: center;
+}
+
+#form>h2{
+    font-size:25px;
+    width: 100%;
+}
+
+#form>input{
+    width: 40vh;
+    height: 30px;
+    justify-self: center;
+    padding-left: 5px;
+}
+
+button{
+    width: 25vh;
+    height: 35px;
+    justify-self: center;
+    border: none;
+    background-color: darkorange;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+
+i{
+    color: darkorange;
+}
+
+.container{
+    justify-content: center;
+    display: grid;
+    width:65%;
+    gap: 70px;
+    margin-bottom: 80px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 100px auto;
+
+}
+
+#video{
+    width: 600px;
+    margin-bottom: 80px;
+}
+
+.div-price{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.prices{
+    border: 1px solid rgba(0, 0, 0, 0.836);
+    border-radius: 3px;
+    width: 300px;
+    height: 300px;
+
+    display: grid;
+    grid-template-rows: 50px 50px auto 50px;
+    justify-items: center;
+
+    margin-bottom: 50px;
+}
+
+.prices h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: bisque;
+}
+
+.prices h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prices p{
+    font-size: 15px;
+    text-align: center;
+    line-height: 25px;
+    color: black;
+    width: 60%;
+}
+
+footer{
+    background-color: bisque;
+    width: 100%;
+    height: 70px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+}
+
+.min-info{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 10px ;
+    margin-top: 10px;
+}
+
+footer span{
+    color: rgba(0, 0, 0, 0.747);
+}
+
+@media (max-width:800px){
+
+    .base{
+        position: relative;
+        top: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #video{
+        width: 500px;
+    }
+
+    .div-price{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #header{
+        height: 140px;
+        width: 100%;
+    }
+
+    #nav-bar{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+
+@media (max-width:600px){
+
+
+
+    #header{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
